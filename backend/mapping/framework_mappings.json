@@ -1,0 +1,400 @@
+{
+  "version": "1.0",
+  "description": "Cross-framework control mappings between NIST 800-53, ISO 27001, SOC 2, PCI-DSS, NIST CSF, and CIS Controls",
+  "mappings": [
+    {
+      "source_framework": "NIST_800_53", "source_id": "AC-1", "source_name": "Policy and Procedures",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.1", "name": "Policies for information security", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC1.1", "name": "COSO Principle 1 - Commitment to integrity", "strength": "moderate"},
+        {"framework": "PCI_DSS", "id": "12.1", "name": "Information security policy", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "GV.PO-01", "name": "Organizational cybersecurity policy", "strength": "strong"},
+        {"framework": "CIS", "id": "17.1", "name": "Establish and Maintain a Security Awareness Program", "strength": "moderate"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AC-2", "source_name": "Account Management",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.15", "name": "Access control", "strength": "strong"},
+        {"framework": "ISO_27001", "id": "A.5.16", "name": "Identity management", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.1", "name": "Logical and physical access controls", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "8.2", "name": "User identification and authentication", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "PR.AA-01", "name": "Identities and credentials are issued and managed", "strength": "strong"},
+        {"framework": "CIS", "id": "5.1", "name": "Establish and Maintain an Inventory of Accounts", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AC-3", "source_name": "Access Enforcement",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.15", "name": "Access control", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.1", "name": "Logical access controls", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "7.2", "name": "Access control systems/processes", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "PR.AA-05", "name": "Access permissions and authorizations", "strength": "strong"},
+        {"framework": "CIS", "id": "6.1", "name": "Establish an Access Granting Process", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AC-5", "source_name": "Separation of Duties",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.3", "name": "Segregation of duties", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.3", "name": "Authorization roles and responsibilities", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "7.1", "name": "Processes and mechanisms for limiting access", "strength": "moderate"},
+        {"framework": "NIST_CSF", "id": "PR.AA-05", "name": "Access permissions based on least privilege", "strength": "moderate"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AC-6", "source_name": "Least Privilege",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.15", "name": "Access control (least privilege)", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.3", "name": "Authorization based on need-to-know", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "7.2.2", "name": "Access privileges assigned based on need-to-know", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "PR.AA-05", "name": "Least privilege access", "strength": "strong"},
+        {"framework": "CIS", "id": "6.8", "name": "Define and Maintain Role-Based Access Control", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AC-17", "source_name": "Remote Access",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.6.7", "name": "Remote working", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.6", "name": "Logical access from outside environments", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "8.6", "name": "Remote access to system components", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "PR.AA-05", "name": "Access permissions managed for remote access", "strength": "strong"},
+        {"framework": "CIS", "id": "12.7", "name": "Manage Default Accounts on Enterprise Assets", "strength": "moderate"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AT-1", "source_name": "Policy and Procedures - Awareness",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.6.3", "name": "Information security awareness, education and training", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC1.4", "name": "Commitment to competence", "strength": "moderate"},
+        {"framework": "PCI_DSS", "id": "12.6", "name": "Security awareness program", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AT-2", "source_name": "Literacy Training and Awareness",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.6.3", "name": "Information security awareness, education and training", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC2.2", "name": "Internal communication about security", "strength": "moderate"},
+        {"framework": "PCI_DSS", "id": "12.6.1", "name": "Security awareness program for all personnel", "strength": "strong"},
+        {"framework": "CIS", "id": "14.1", "name": "Establish and Maintain a Security Awareness Program", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AU-2", "source_name": "Event Logging",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.15", "name": "Logging", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.2", "name": "System monitoring", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "10.2", "name": "Audit logs capture individual user access", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "DE.AE-03", "name": "Event data collected and correlated", "strength": "strong"},
+        {"framework": "CIS", "id": "8.2", "name": "Collect Audit Logs", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AU-3", "source_name": "Content of Audit Records",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.15", "name": "Logging", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.2", "name": "Monitoring of system components", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "10.3", "name": "Audit log content requirements", "strength": "strong"},
+        {"framework": "CIS", "id": "8.5", "name": "Collect Detailed Audit Logs", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "AU-6", "source_name": "Audit Record Review and Analysis",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.16", "name": "Monitoring activities", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.3", "name": "Evaluation and communication of security events", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "10.7", "name": "Failures of critical controls detected and reported", "strength": "moderate"},
+        {"framework": "NIST_CSF", "id": "DE.AE-06", "name": "Information on adverse events communicated", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "CA-2", "source_name": "Control Assessments",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.35", "name": "Independent review of information security", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC4.1", "name": "Evaluates and communicates internal control deficiencies", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "12.3", "name": "Risks to cardholder data identified and managed", "strength": "moderate"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "CA-7", "source_name": "Continuous Monitoring",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.16", "name": "Monitoring activities", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.1", "name": "Detection and monitoring procedures", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "10.6", "name": "Time synchronization mechanisms", "strength": "moderate"},
+        {"framework": "NIST_CSF", "id": "DE.CM-01", "name": "Networks and network services monitored", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "CM-2", "source_name": "Baseline Configuration",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.9", "name": "Configuration management", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.1", "name": "Detection and monitoring procedures", "strength": "moderate"},
+        {"framework": "PCI_DSS", "id": "2.2", "name": "System configuration standards", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "ID.AM-08", "name": "Systems hardware and software inventoried", "strength": "moderate"},
+        {"framework": "CIS", "id": "4.1", "name": "Establish and Maintain a Secure Configuration Process", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "CM-6", "source_name": "Configuration Settings",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.9", "name": "Configuration management", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.1", "name": "Baseline detection configurations", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "2.2.1", "name": "Configuration standards developed for all system components", "strength": "strong"},
+        {"framework": "CIS", "id": "4.2", "name": "Establish and Maintain a Secure Configuration Process for Network Infrastructure", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "CM-7", "source_name": "Least Functionality",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.8", "name": "Management of technical vulnerabilities", "strength": "moderate"},
+        {"framework": "PCI_DSS", "id": "2.2.4", "name": "Only necessary services are enabled", "strength": "strong"},
+        {"framework": "CIS", "id": "4.8", "name": "Uninstall or Disable Unnecessary Services", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "CP-9", "source_name": "System Backup",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.13", "name": "Information backup", "strength": "strong"},
+        {"framework": "SOC2", "id": "A1.2", "name": "Environmental protections, software, data backup", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "12.3.4", "name": "Hardware and software technologies reviewed", "strength": "moderate"},
+        {"framework": "CIS", "id": "11.1", "name": "Establish and Maintain a Data Recovery Process", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "CP-10", "source_name": "System Recovery and Reconstitution",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.30", "name": "ICT readiness for business continuity", "strength": "strong"},
+        {"framework": "SOC2", "id": "A1.3", "name": "Recovery plan and procedures", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "12.10.1", "name": "Incident response plan exists", "strength": "moderate"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "IA-2", "source_name": "Identification and Authentication (Org Users)",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.17", "name": "Authentication information", "strength": "strong"},
+        {"framework": "ISO_27001", "id": "A.8.5", "name": "Secure authentication", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.1", "name": "Logical access security measures", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "8.3", "name": "All user IDs and authentication factors", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "PR.AA-02", "name": "Identities authenticated", "strength": "strong"},
+        {"framework": "CIS", "id": "6.3", "name": "Require MFA for Externally-Exposed Applications", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "IA-5", "source_name": "Authenticator Management",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.17", "name": "Authentication information", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.1", "name": "Authentication mechanisms", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "8.3.6", "name": "Password/passphrase requirements", "strength": "strong"},
+        {"framework": "CIS", "id": "5.2", "name": "Use Unique Passwords", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "IR-1", "source_name": "Incident Response Policy",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.24", "name": "Information security incident management planning", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.3", "name": "Identified security incidents communicated", "strength": "moderate"},
+        {"framework": "PCI_DSS", "id": "12.10.1", "name": "Incident response plan", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "IR-4", "source_name": "Incident Handling",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.26", "name": "Response to information security incidents", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.4", "name": "Response to identified security incidents", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "12.10.2", "name": "Incident response plan reviewed and tested", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "RS.MA-01", "name": "Incident response plan executed", "strength": "strong"},
+        {"framework": "CIS", "id": "17.4", "name": "Establish and Maintain an Incident Response Process", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "IR-5", "source_name": "Incident Monitoring",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.27", "name": "Learning from information security incidents", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.4", "name": "Incident tracking and reporting", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "RS.AN-03", "name": "Analysis performed to establish what occurred", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "PE-2", "source_name": "Physical Access Authorizations",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.7.2", "name": "Physical entry", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.4", "name": "Physical access restrictions", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "9.3", "name": "Physical access for personnel and visitors", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "PE-3", "source_name": "Physical Access Control",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.7.2", "name": "Physical entry controls", "strength": "strong"},
+        {"framework": "ISO_27001", "id": "A.7.3", "name": "Securing offices, rooms and facilities", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.4", "name": "Physical access to facilities", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "9.1", "name": "Processes and mechanisms to restrict physical access", "strength": "strong"},
+        {"framework": "CIS", "id": "10.5", "name": "Enable Anti-Exploitation Features", "strength": "weak"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "PL-1", "source_name": "Planning Policy and Procedures",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.1", "name": "Policies for information security", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC1.2", "name": "Board independence and oversight", "strength": "weak"},
+        {"framework": "PCI_DSS", "id": "12.1", "name": "Information security policy exists", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "PS-3", "source_name": "Personnel Screening",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.6.1", "name": "Screening", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC1.4", "name": "Commitment to competence", "strength": "moderate"},
+        {"framework": "PCI_DSS", "id": "12.7", "name": "Personnel are screened", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "PS-4", "source_name": "Personnel Termination",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.6.5", "name": "Responsibilities after termination or change of employment", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.2", "name": "New internal and external users granted access", "strength": "moderate"},
+        {"framework": "PCI_DSS", "id": "8.2.6", "name": "Inactive accounts removed within 90 days", "strength": "moderate"},
+        {"framework": "CIS", "id": "5.3", "name": "Disable Dormant Accounts", "strength": "moderate"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "RA-3", "source_name": "Risk Assessment",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.9", "name": "Inventory of information and other associated assets", "strength": "moderate"},
+        {"framework": "ISO_27001", "id": "6.1.2", "name": "Information security risk assessment", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC3.1", "name": "Specifies objectives with sufficient clarity", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "12.3.1", "name": "Risk assessment process", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "GV.RM-01", "name": "Risk management objectives established", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "RA-5", "source_name": "Vulnerability Monitoring and Scanning",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.8", "name": "Management of technical vulnerabilities", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.1", "name": "Vulnerability identification", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "11.3", "name": "External and internal vulnerabilities managed", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "ID.RA-01", "name": "Asset vulnerabilities identified and documented", "strength": "strong"},
+        {"framework": "CIS", "id": "7.1", "name": "Establish and Maintain a Vulnerability Management Process", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SA-3", "source_name": "System Development Life Cycle",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.25", "name": "Secure development life cycle", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC8.1", "name": "Changes to infrastructure, data and software", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "6.2", "name": "Bespoke and custom software developed securely", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SA-11", "source_name": "Developer Testing and Evaluation",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.29", "name": "Security testing in development and acceptance", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC8.1", "name": "Testing for new software/changes", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "6.2.4", "name": "Software engineering techniques applied", "strength": "strong"},
+        {"framework": "CIS", "id": "16.12", "name": "Implement Code-Level Security Checks", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SC-7", "source_name": "Boundary Protection",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.20", "name": "Networks security", "strength": "strong"},
+        {"framework": "ISO_27001", "id": "A.8.22", "name": "Segregation of networks", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.6", "name": "Logical access from outside the boundaries", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "1.3", "name": "Network access to and from the cardholder data environment", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "PR.IR-02", "name": "Access to networks and network services controlled", "strength": "strong"},
+        {"framework": "CIS", "id": "13.1", "name": "Centralize Security Event Alerting", "strength": "moderate"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SC-8", "source_name": "Transmission Confidentiality and Integrity",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.24", "name": "Use of cryptography", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.7", "name": "Transmission of data restricted", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "4.2", "name": "PAN protected with strong cryptography during transmission", "strength": "strong"},
+        {"framework": "CIS", "id": "3.10", "name": "Encrypt Sensitive Data in Transit", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SC-28", "source_name": "Protection of Information at Rest",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.24", "name": "Use of cryptography", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.7", "name": "Data at rest protections", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "3.5", "name": "Primary account number secured", "strength": "strong"},
+        {"framework": "CIS", "id": "3.11", "name": "Encrypt Sensitive Data at Rest", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SI-2", "source_name": "Flaw Remediation",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.8", "name": "Management of technical vulnerabilities", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC7.1", "name": "Detection of vulnerabilities", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "6.3", "name": "Security vulnerabilities identified and addressed", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "ID.RA-01", "name": "Asset vulnerabilities identified", "strength": "strong"},
+        {"framework": "CIS", "id": "7.4", "name": "Manage Operating System Vulnerabilities", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SI-3", "source_name": "Malicious Code Protection",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.8.7", "name": "Protection against malware", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.8", "name": "Malicious software is prevented", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "5.2", "name": "Malicious software (malware) prevented or detected", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "DE.CM-09", "name": "Computing hardware and software monitored", "strength": "moderate"},
+        {"framework": "CIS", "id": "10.1", "name": "Deploy and Maintain Anti-Malware Software", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SR-1", "source_name": "Supply Chain Risk Management Policy",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.19", "name": "Information security in supplier relationships", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC9.2", "name": "Vendor and business partner risk management", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "12.8", "name": "Risk from third-party service providers managed", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "GV.SC-01", "name": "Cybersecurity supply chain risk management policy", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_800_53", "source_id": "SR-6", "source_name": "Supplier Assessments and Reviews",
+      "targets": [
+        {"framework": "ISO_27001", "id": "A.5.21", "name": "Managing information security in the ICT supply chain", "strength": "strong"},
+        {"framework": "ISO_27001", "id": "A.5.22", "name": "Monitoring, review and change management of supplier services", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC9.2", "name": "Vendor risk assessment", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "12.8.4", "name": "Third-party service providers reviewed annually", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "ISO_27001", "source_id": "A.5.23", "source_name": "Information security for use of cloud services",
+      "targets": [
+        {"framework": "NIST_800_53", "id": "SA-9", "name": "External System Services", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC9.2", "name": "Vendor and business partner risk management", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "GV.SC-06", "name": "Cybersecurity requirements for suppliers", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "PCI_DSS", "source_id": "3.4", "source_name": "PAN rendering unreadable",
+      "targets": [
+        {"framework": "NIST_800_53", "id": "SC-28", "name": "Protection of Information at Rest", "strength": "strong"},
+        {"framework": "ISO_27001", "id": "A.8.24", "name": "Use of cryptography", "strength": "strong"},
+        {"framework": "SOC2", "id": "CC6.7", "name": "Data protection", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "SOC2", "source_id": "CC6.1", "source_name": "Logical and Physical Access Controls",
+      "targets": [
+        {"framework": "NIST_800_53", "id": "AC-2", "name": "Account Management", "strength": "strong"},
+        {"framework": "NIST_800_53", "id": "AC-3", "name": "Access Enforcement", "strength": "strong"},
+        {"framework": "ISO_27001", "id": "A.5.15", "name": "Access control", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "7.2", "name": "Access control systems", "strength": "strong"},
+        {"framework": "NIST_CSF", "id": "PR.AA-05", "name": "Access permissions managed", "strength": "strong"}
+      ]
+    },
+    {
+      "source_framework": "NIST_CSF", "source_id": "ID.RA-01", "source_name": "Asset vulnerabilities identified and documented",
+      "targets": [
+        {"framework": "NIST_800_53", "id": "RA-5", "name": "Vulnerability Monitoring and Scanning", "strength": "strong"},
+        {"framework": "ISO_27001", "id": "A.8.8", "name": "Management of technical vulnerabilities", "strength": "strong"},
+        {"framework": "PCI_DSS", "id": "11.3", "name": "External and internal vulnerabilities managed", "strength": "strong"},
+        {"framework": "CIS", "id": "7.1", "name": "Establish and Maintain a Vulnerability Management Process", "strength": "strong"}
+      ]
+    }
+  ]
+}
